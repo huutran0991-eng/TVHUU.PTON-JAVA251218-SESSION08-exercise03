@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+.container{
+/*  background-colorは親に付ける時にはgapが効かない  */
+    display: flex;
+    color: white;
+    background-color: black;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}    
+.box{
+    /* 子供の要素は親のwidth通り */
+    width: 50%;
+    line-height: 30px;
+}
+@media(max-width:1024px){
+    .container .box{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 20px);
+    }
+
+}

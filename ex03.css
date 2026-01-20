@@ -18,7 +18,8 @@
     .container .box{
         display: flex;
         flex-direction: column;
-        width: calc(100% - 20px);
+        width: 100%;
     }
 
 }
+
